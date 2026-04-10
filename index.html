@@ -30,8 +30,8 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#about" onclick="closeMenu()">About</a></li>
         <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
         <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
         <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
       </ul>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
@@ -203,79 +203,6 @@
 
   <hr class="section-divider" />
 
-  <!-- ═══════════════ Published Apps ═══════════════ -->
-  <section class="projects" id="apps">
-    <div class="container">
-
-      <!-- Published Apps sub-section -->
-      <div class="apps-subsection fade-in" style="margin-top: 0; padding-top: 0; border-top: none;">
-        <div class="apps-subsection-header">
-          <span class="section-label">// Published on Google Play</span>
-          <h3 class="apps-subsection-title">Mobile Apps</h3>
-          <p class="section-desc">Public transit companion apps published under <strong>Infoceanic</strong></p>
-        </div>
-
-        <div class="apps-grid">
-
-          <!-- App 1: Info Metropolitana Granada -->
-          <a href="https://play.google.com/store/apps/details?id=com.infoceanic.granada" target="_blank" rel="noopener" class="app-card fade-in" id="app-granada">
-            <div class="app-card-inner">
-              <div class="app-icon-wrapper">
-                <span class="app-icon">🚌</span>
-              </div>
-              <div class="app-info">
-                <h4>Info Metropolitana Granada</h4>
-                <p>Route search, timetables, and transit operator info for the metropolitan area and province of Granada. Powered by the Andalusian Transport Consortium Open Data API.</p>
-                <div class="app-tags">
-                  <span>Android</span>
-                  <span>Public Transit</span>
-                  <span>Granada</span>
-                </div>
-              </div>
-              <span class="app-badge">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
-                Google Play
-              </span>
-            </div>
-          </a>
-
-          <!-- App 2: Info Metropolitano Cádiz -->
-          <a href="https://play.google.com/store/apps/details?id=com.infoceanic.infometropolitanocadiz" target="_blank" rel="noopener" class="app-card fade-in fade-in-delay-1" id="app-cadiz">
-            <div class="app-card-inner">
-              <div class="app-icon-wrapper">
-                <span class="app-icon">🚍</span>
-              </div>
-              <div class="app-info">
-                <h4>Info Metropolitano Cádiz</h4>
-                <p>Routes, schedules, and stops for intercity public transport in the Bay of Cádiz. Covers Cádiz, San Fernando, Chiclana, and surrounding towns via official open data.</p>
-                <div class="app-tags">
-                  <span>Android</span>
-                  <span>Public Transit</span>
-                  <span>Cádiz</span>
-                </div>
-              </div>
-              <span class="app-badge">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
-                Google Play
-              </span>
-            </div>
-          </a>
-
-        </div>
-
-        <div class="apps-footer">
-          <a href="https://play.google.com/store/apps/developer?id=Infoceanic" target="_blank" rel="noopener" class="btn btn-secondary" id="apps-view-all">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
-            View all apps on Google Play
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <hr class="section-divider" />
-
   <!-- ═══════════════ Blog ═══════════════ -->
   <section class="blog" id="blog">
     <div class="container">
@@ -342,7 +269,7 @@
 
   <hr class="section-divider" />
 
-  <!-- ═══════════════ Projects ═══════════════ -->
+ <!-- ═══════════════ Projects ═══════════════ -->
   <section class="projects" id="projects">
     <div class="container">
       <div class="section-header fade-in">
@@ -409,6 +336,71 @@
         </div>
 
       </div>
+
+      <!-- Published Apps sub-section -->
+      <div class="apps-subsection fade-in">
+        <div class="apps-subsection-header">
+          <span class="section-label">// Published on Google Play</span>
+          <h3 class="apps-subsection-title">Mobile Apps</h3>
+          <p class="section-desc">Public transit companion apps published under <strong>Infoceanic</strong></p>
+        </div>
+
+        <div class="apps-grid">
+
+          <!-- App 1: Info Metropolitana Granada -->
+          <a href="https://play.google.com/store/apps/details?id=com.infoceanic.granada" target="_blank" rel="noopener" class="app-card fade-in" id="app-granada">
+            <div class="app-card-inner">
+              <div class="app-icon-wrapper">
+                <span class="app-icon">🚌</span>
+              </div>
+              <div class="app-info">
+                <h4>Info Metropolitana Granada</h4>
+                <p>Route search, timetables, and transit operator info for the metropolitan area and province of Granada. Powered by the Andalusian Transport Consortium Open Data API.</p>
+                <div class="app-tags">
+                  <span>Android</span>
+                  <span>Public Transit</span>
+                  <span>Granada</span>
+                </div>
+              </div>
+              <span class="app-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
+                Google Play
+              </span>
+            </div>
+          </a>
+
+          <!-- App 2: Info Metropolitano Cádiz -->
+          <a href="https://play.google.com/store/apps/details?id=com.infoceanic.infometropolitanocadiz" target="_blank" rel="noopener" class="app-card fade-in fade-in-delay-1" id="app-cadiz">
+            <div class="app-card-inner">
+              <div class="app-icon-wrapper">
+                <span class="app-icon">🚍</span>
+              </div>
+              <div class="app-info">
+                <h4>Info Metropolitano Cádiz</h4>
+                <p>Routes, schedules, and stops for intercity public transport in the Bay of Cádiz. Covers Cádiz, San Fernando, Chiclana, and surrounding towns via official open data.</p>
+                <div class="app-tags">
+                  <span>Android</span>
+                  <span>Public Transit</span>
+                  <span>Cádiz</span>
+                </div>
+              </div>
+              <span class="app-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
+                Google Play
+              </span>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="apps-footer">
+          <a href="https://play.google.com/store/apps/developer?id=Infoceanic" target="_blank" rel="noopener" class="btn btn-secondary" id="apps-view-all">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
+            View all apps on Google Play
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
