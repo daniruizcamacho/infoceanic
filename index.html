@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Ruiz — Software Engineer</title>
+  <meta name="description" content="Daniel Ruiz is a Software Engineer based in Madrid, Spain. Building scalable backend systems, modern web & mobile applications." />
+  <meta name="keywords" content="Daniel Ruiz, Software Engineer, Full Stack Developer, Backend, Frontend, Mobile, Madrid" />
+  <meta name="author" content="Daniel Ruiz" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Daniel Ruiz — Software Engineer" />
+  <meta property="og:description" content="Software Engineer based in Madrid. Building scalable systems and modern applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daniruizcamacho.github.io/infoceanic/" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>🚀</text></svg>" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Particle background -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════════ Navigation ═══════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">DR</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ Hero ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-orb hero-orb--3"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Open to new opportunities
+      </div>
+      <h1>
+        Hi, I'm <span class="gradient-text">Daniel Ruiz</span><br />
+        Software Engineer
+      </h1>
+      <p class="hero-subtitle">
+        I design and build scalable backend systems, modern web applications, and mobile experiences. Based in Madrid, passionate about clean code and great user experiences.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+          <!-- Arrow icon -->
+          <svg class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+          View My Work
+        </a>
+        <a href="https://github.com/daniruizcamacho" target="_blank" rel="noopener" class="btn btn-secondary" id="hero-cta-github">
+          <!-- GitHub icon -->
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ═══════════════ About ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">// About Me</span>
+        <h2 class="section-title">A little about myself</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar fade-in">
+          <img src="assets/avatar.png" alt="Daniel Ruiz — Software Engineer avatar" width="280" height="280" />
+        </div>
+
+        <div class="about-text">
+          <h3 class="fade-in">Building software that matters</h3>
+          <p class="fade-in fade-in-delay-1">
+            I'm a Software Engineer based in <strong>Madrid, Spain</strong>. I specialize in building robust backend services, crafting intuitive frontend interfaces, and developing cross-platform mobile applications.
+          </p>
+          <p class="fade-in fade-in-delay-2">
+            With experience across multiple languages and frameworks — from <strong>PHP</strong> and <strong>Go</strong> on the backend, to <strong>React</strong>, <strong>Next.js</strong>, and <strong>React Native</strong> on the frontend — I enjoy tackling complex problems end-to-end and delivering polished products.
+          </p>
+          <p class="fade-in fade-in-delay-3">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or discovering Madrid's best coffee spots ☕.
+          </p>
+
+          <div class="about-stats fade-in fade-in-delay-4">
+            <div class="stat">
+              <span class="stat-number" id="stat-repos">18</span>
+              <span class="stat-label">Repositories</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" id="stat-stars">524</span>
+              <span class="stat-label">GitHub Stars</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" id="stat-langs">6+</span>
+              <span class="stat-label">Languages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ═══════════════ Skills ═══════════════ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">// Tech Stack</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-desc">A versatile toolkit built through years of shipping real products</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend -->
+        <div class="skill-category fade-in">
+          <div class="skill-icon skill-icon--backend">⚙️</div>
+          <h3>Backend & APIs</h3>
+          <p>Building scalable services, RESTful APIs, event-driven architectures, and microservices.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category fade-in fade-in-delay-1">
+          <div class="skill-icon skill-icon--frontend">🎨</div>
+          <h3>Frontend & Web</h3>
+          <p>Creating responsive, accessible, and performant user interfaces with modern frameworks.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">MUI</span>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="skill-category fade-in fade-in-delay-2">
+          <div class="skill-icon skill-icon--mobile">📱</div>
+          <h3>Mobile Development</h3>
+          <p>Cross-platform mobile apps with native performance and excellent user experience.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">React Native</span>
+            <span class="skill-tag">Expo</span>
+            <span class="skill-tag">Android</span>
+          </div>
+        </div>
+
+        <!-- DevOps / Cloud -->
+        <div class="skill-category fade-in fade-in-delay-3">
+          <div class="skill-icon skill-icon--devops">☁️</div>
+          <h3>DevOps & Cloud</h3>
+          <p>Infrastructure automation, CI/CD pipelines, and cloud-native deployments.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Shell</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ═══════════════ Projects ═══════════════ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">// Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-desc">A selection of projects I've built and contributed to</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Image Generation -->
+        <div class="project-card fade-in" id="project-image-gen">
+          <div class="project-header">
+            <div class="project-icon" style="background: rgba(99, 102, 241, 0.1);">🎯</div>
+            <div class="project-links">
+              <a href="https://github.com/daniruizcamacho/image-generation-example" target="_blank" rel="noopener" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Image Generation Example</h3>
+          <p>A Go-based image generation service demonstrating programmatic image creation and manipulation techniques.</p>
+          <div class="project-tech">
+            <span>Go</span>
+            <span>Image Processing</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Chrome Extension -->
+        <div class="project-card fade-in fade-in-delay-1" id="project-chrome-ext">
+          <div class="project-header">
+            <div class="project-icon" style="background: rgba(6, 182, 212, 0.1);">🧩</div>
+            <div class="project-links">
+              <a href="https://github.com/daniruizcamacho/chromeExtensionExample" target="_blank" rel="noopener" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Chrome Extension</h3>
+          <p>A browser extension example showcasing Chrome APIs, content scripts, and extension manifest configuration.</p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>Chrome APIs</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Android Flavors Tutorial -->
+        <div class="project-card fade-in fade-in-delay-2" id="project-android-flavors">
+          <div class="project-header">
+            <div class="project-icon" style="background: rgba(139, 92, 246, 0.1);">📱</div>
+            <div class="project-links">
+              <a href="https://github.com/daniruizcamacho/tutorial-flavors-android" target="_blank" rel="noopener" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Android Flavors Tutorial</h3>
+          <p>A practical tutorial demonstrating Android build flavors for managing multiple app variants from a single codebase.</p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>Android</span>
+            <span>Gradle</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Laradock -->
+        <div class="project-card fade-in fade-in-delay-3" id="project-laradock">
+          <div class="project-header">
+            <div class="project-icon" style="background: rgba(16, 185, 129, 0.1);">🐳</div>
+            <div class="project-links">
+              <a href="https://github.com/daniruizcamacho/laradock" target="_blank" rel="noopener" class="project-link" aria-label="View source code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Laradock Environment</h3>
+          <p>A full PHP development environment for Docker, enabling seamless local development with containerized services.</p>
+          <div class="project-tech">
+            <span>Docker</span>
+            <span>PHP</span>
+            <span>Shell</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Published Apps sub-section -->
+      <div class="apps-subsection fade-in">
+        <div class="apps-subsection-header">
+          <span class="section-label">// Published on Google Play</span>
+          <h3 class="apps-subsection-title">Mobile Apps</h3>
+          <p class="section-desc">Public transit companion apps published under <strong>Infoceanic</strong></p>
+        </div>
+
+        <div class="apps-grid">
+
+          <!-- App 1: Info Metropolitana Granada -->
+          <a href="https://play.google.com/store/apps/details?id=com.infoceanic.granada" target="_blank" rel="noopener" class="app-card fade-in" id="app-granada">
+            <div class="app-card-inner">
+              <div class="app-icon-wrapper">
+                <span class="app-icon">🚌</span>
+              </div>
+              <div class="app-info">
+                <h4>Info Metropolitana Granada</h4>
+                <p>Route search, timetables, and transit operator info for the metropolitan area and province of Granada. Powered by the Andalusian Transport Consortium Open Data API.</p>
+                <div class="app-tags">
+                  <span>Android</span>
+                  <span>Public Transit</span>
+                  <span>Granada</span>
+                </div>
+              </div>
+              <span class="app-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
+                Google Play
+              </span>
+            </div>
+          </a>
+
+          <!-- App 2: Info Metropolitano Cádiz -->
+          <a href="https://play.google.com/store/apps/details?id=com.infoceanic.infometropolitanocadiz" target="_blank" rel="noopener" class="app-card fade-in fade-in-delay-1" id="app-cadiz">
+            <div class="app-card-inner">
+              <div class="app-icon-wrapper">
+                <span class="app-icon">🚍</span>
+              </div>
+              <div class="app-info">
+                <h4>Info Metropolitano Cádiz</h4>
+                <p>Routes, schedules, and stops for intercity public transport in the Bay of Cádiz. Covers Cádiz, San Fernando, Chiclana, and surrounding towns via official open data.</p>
+                <div class="app-tags">
+                  <span>Android</span>
+                  <span>Public Transit</span>
+                  <span>Cádiz</span>
+                </div>
+              </div>
+              <span class="app-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
+                Google Play
+              </span>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="apps-footer">
+          <a href="https://play.google.com/store/apps/developer?id=Infoceanic" target="_blank" rel="noopener" class="btn btn-secondary" id="apps-view-all">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 01-.609-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.302 1.311c.646.421.646 1.342 0 1.764l-2.05 1.17-2.545-2.545 2.293-1.7zM5.864 1.469L16.8 7.801l-2.302 2.302-8.635-8.634z"/></svg>
+            View all apps on Google Play
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ═══════════════ Blog ═══════════════ -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">// Blog</span>
+        <h2 class="section-title">Latest Writing</h2>
+        <p class="section-desc">Technical articles and deep-dives published on Medium</p>
+      </div>
+
+      <div class="blog-grid">
+
+        <!-- Article 1 -->
+        <a href="https://medium.com/@daniel.ruizcamacho/why-your-struct-takes-up-more-memory-than-it-should-in-golang-a6644f83b28f" target="_blank" rel="noopener" class="blog-card fade-in" id="blog-struct-memory">
+          <div class="blog-card-inner">
+            <div class="blog-meta">
+              <time datetime="2025-04">Apr 2025</time>
+              <span class="blog-read-time">· 5 min read</span>
+            </div>
+            <h3>Why Your Struct Takes Up More Memory Than It Should in Golang</h3>
+            <p>An exploration of data alignment, struct padding, and how reordering fields can significantly reduce memory usage and improve performance in Go applications.</p>
+            <div class="blog-tags">
+              <span>Go</span>
+              <span>Performance</span>
+              <span>Memory</span>
+            </div>
+            <span class="blog-cta">
+              Read on Medium
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="https://medium.com/@daniel.ruizcamacho/how-to-create-an-image-in-go-step-by-step-60d704d9c490" target="_blank" rel="noopener" class="blog-card fade-in fade-in-delay-1" id="blog-image-go">
+          <div class="blog-card-inner">
+            <div class="blog-meta">
+              <time datetime="2024-09">Sep 2024</time>
+              <span class="blog-read-time">· 6 min read</span>
+            </div>
+            <h3>How to Create an Image in Go, Step by Step</h3>
+            <p>A practical guide on using Go's standard library and image packages to programmatically generate images, draw graphics, and add text overlays.</p>
+            <div class="blog-tags">
+              <span>Go</span>
+              <span>Tutorial</span>
+              <span>Image Processing</span>
+            </div>
+            <span class="blog-cta">
+              Read on Medium
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="blog-footer fade-in">
+        <a href="https://medium.com/@daniel.ruizcamacho" target="_blank" rel="noopener" class="btn btn-secondary" id="blog-view-all">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          View all posts on Medium
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ═══════════════ Contact ═══════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper fade-in">
+        <span class="section-label">// Get In Touch</span>
+        <h2>Let's work together</h2>
+        <p>
+          I'm always interested in hearing about new projects and opportunities.
+          Whether you have a question or just want to say hi, feel free to reach out!
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/daniruizcamacho" target="_blank" rel="noopener" class="contact-link" id="contact-github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/danielruizcamacho" target="_blank" rel="noopener" class="contact-link" id="contact-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:hello@danielruiz.dev" class="contact-link" id="contact-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Email
+          </a>
+          <a href="https://medium.com/@daniel.ruizcamacho" target="_blank" rel="noopener" class="contact-link" id="contact-medium">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+            Medium
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ Footer ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">
+        © 2026 <span>Daniel Ruiz</span>. Crafted with care.
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/daniruizcamacho" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/danielruizcamacho" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
