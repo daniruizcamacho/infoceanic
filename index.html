@@ -17,7 +17,7 @@
   <!-- Favicon (inline SVG) -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>🚀</text></svg>" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <!-- Particle background -->
@@ -51,16 +51,12 @@
     <div class="hero-orb hero-orb--3"></div>
 
     <div class="container hero-content">
-      <div class="hero-badge">
-        <span class="dot"></span>
-        Open to new opportunities
-      </div>
       <h1>
         Hi, I'm <span class="gradient-text">Daniel Ruiz</span><br />
         Software Engineer
       </h1>
       <p class="hero-subtitle">
-        I design and build scalable backend systems, modern web applications, and mobile experiences. Based in Madrid, passionate about clean code and great user experiences.
+        I design and build scalable backend systems, modern web applications, and mobile experiences. Based in Spain, passionate about clean code and great user experiences.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
@@ -104,13 +100,13 @@
         <div class="about-text">
           <h3 class="fade-in">Building software that matters</h3>
           <p class="fade-in fade-in-delay-1">
-            I'm a Software Engineer based in <strong>Madrid, Spain</strong>. I specialize in building robust backend services, crafting intuitive frontend interfaces, and developing cross-platform mobile applications.
+            I'm a Software Engineer based in <strong>Spain</strong>. I specialize in building robust backend services, crafting intuitive frontend interfaces, and developing cross-platform mobile applications.
           </p>
           <p class="fade-in fade-in-delay-2">
             With experience across multiple languages and frameworks — from <strong>PHP</strong> and <strong>Go</strong> on the backend, to <strong>React</strong>, <strong>Next.js</strong>, and <strong>React Native</strong> on the frontend — I enjoy tackling complex problems end-to-end and delivering polished products.
           </p>
           <p class="fade-in fade-in-delay-3">
-            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or discovering Madrid's best coffee spots ☕.
+            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or discovering new places ☕.
           </p>
 
           <div class="about-stats fade-in fade-in-delay-4">
@@ -144,8 +140,23 @@
       </div>
 
       <div class="skills-grid">
-        <!-- Backend -->
+        <!-- Architecture -->
         <div class="skill-category fade-in">
+          <div class="skill-icon skill-icon--architecture">🏗️</div>
+          <h3>Software Architecture</h3>
+          <p>Designing scalable, maintainable systems using modern architectural patterns.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">DDD</span>
+            <span class="skill-tag">Hexagonal Architecture</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Event-Driven</span>
+            <span class="skill-tag">Clean Architecture</span>
+            <span class="skill-tag">CQRS</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category fade-in fade-in-delay-1">
           <div class="skill-icon skill-icon--backend">⚙️</div>
           <h3>Backend & APIs</h3>
           <p>Building scalable services, RESTful APIs, event-driven architectures, and microservices.</p>
@@ -161,7 +172,7 @@
         </div>
 
         <!-- Frontend -->
-        <div class="skill-category fade-in fade-in-delay-1">
+        <div class="skill-category fade-in fade-in-delay-2">
           <div class="skill-icon skill-icon--frontend">🎨</div>
           <h3>Frontend & Web</h3>
           <p>Creating responsive, accessible, and performant user interfaces with modern frameworks.</p>
@@ -176,7 +187,7 @@
         </div>
 
         <!-- Mobile -->
-        <div class="skill-category fade-in fade-in-delay-2">
+        <div class="skill-category fade-in fade-in-delay-3">
           <div class="skill-icon skill-icon--mobile">📱</div>
           <h3>Mobile Development</h3>
           <p>Cross-platform mobile apps with native performance and excellent user experience.</p>
@@ -184,21 +195,6 @@
             <span class="skill-tag">React Native</span>
             <span class="skill-tag">Expo</span>
             <span class="skill-tag">Android</span>
-          </div>
-        </div>
-
-        <!-- DevOps / Cloud -->
-        <div class="skill-category fade-in fade-in-delay-3">
-          <div class="skill-icon skill-icon--devops">☁️</div>
-          <h3>DevOps & Cloud</h3>
-          <p>Infrastructure automation, CI/CD pipelines, and cloud-native deployments.</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">GitHub Actions</span>
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Shell</span>
           </div>
         </div>
       </div>
@@ -270,25 +266,6 @@
             <span>Java</span>
             <span>Android</span>
             <span>Gradle</span>
-          </div>
-        </div>
-
-        <!-- Project 4: Laradock -->
-        <div class="project-card fade-in fade-in-delay-3" id="project-laradock">
-          <div class="project-header">
-            <div class="project-icon" style="background: rgba(16, 185, 129, 0.1);">🐳</div>
-            <div class="project-links">
-              <a href="https://github.com/daniruizcamacho/laradock" target="_blank" rel="noopener" class="project-link" aria-label="View source code">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3>Laradock Environment</h3>
-          <p>A full PHP development environment for Docker, enabling seamless local development with containerized services.</p>
-          <div class="project-tech">
-            <span>Docker</span>
-            <span>PHP</span>
-            <span>Shell</span>
           </div>
         </div>
 

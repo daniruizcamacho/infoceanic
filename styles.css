@@ -598,7 +598,7 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
 }
 
@@ -649,7 +649,7 @@ section {
 .skill-icon--backend { background: rgba(99, 102, 241, 0.1); }
 .skill-icon--frontend { background: rgba(6, 182, 212, 0.1); }
 .skill-icon--mobile { background: rgba(139, 92, 246, 0.1); }
-.skill-icon--devops { background: rgba(16, 185, 129, 0.1); }
+.skill-icon--architecture { background: rgba(16, 185, 129, 0.1); }
 
 .skill-category h3 {
   font-size: 1.15rem;
