@@ -76,7 +76,7 @@ const translations = {
     // Legal common
     "legal.nav.home": "Home",
     "legal.label": "// Legal",
-    "legal.last_updated.bt": "<strong>Last Updated: [Date]</strong>",
+    "legal.last_updated.bt": "<strong>Last Updated: May 23, 2026</strong>",
     "legal.last_updated.ima": "<strong>Last Updated: May 16, 2026</strong>",
 
     // Baby Tracker Privacy
@@ -253,7 +253,7 @@ const translations = {
     // Legal common
     "legal.nav.home": "Inicio",
     "legal.label": "// Legal",
-    "legal.last_updated.bt": "<strong>Última actualización: [Date]</strong>",
+    "legal.last_updated.bt": "<strong>Última actualización: 23 de Mayo de 2026</strong>",
     "legal.last_updated.ima": "<strong>Última actualización: 16 de Mayo de 2026</strong>",
 
     // Baby Tracker Privacy
