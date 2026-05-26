@@ -76,7 +76,7 @@ const translations = {
     // Legal common
     "legal.nav.home": "Home",
     "legal.label": "// Legal",
-    "legal.last_updated.bt": "<strong>Last Updated: May 23, 2026</strong>",
+    "legal.last_updated.bt": "<strong>Last Updated: May 26, 2026</strong>",
     "legal.last_updated.ima": "<strong>Last Updated: May 16, 2026</strong>",
 
     // Baby Tracker Privacy
@@ -90,8 +90,10 @@ const translations = {
     "bt.priv.3.p": "If you choose to enable cloud backups (e.g., through Android Auto Backup or manual exports), your data will be synchronized to your personal cloud account (like Google Drive). We do not have access to these backups.",
     "bt.priv.4.t": "4. Third-Party Services",
     "bt.priv.4.p": "We may use third-party services for crash reporting and analytics to improve the app's performance. These services may collect anonymous usage data. We ensure any third-party service used complies with strict privacy standards.",
-    "bt.priv.5.t": "5. Contact Us",
-    "bt.priv.5.p": "If you have any questions about this privacy policy, please contact us at: infoceanicapp@gmail.com",
+    "bt.priv.5.t": "5. Data Retention and Deletion",
+    "bt.priv.5.p": "All baby tracking data is stored locally on your device. We do not retain or store your personal or baby-related data on our servers. Your data remains on your device until you delete the app or clear the app's data through your device settings. If you choose to enable cloud backups (such as Google Drive or Android Auto Backup), the backup files are stored in your personal cloud account and are retained there according to your cloud storage preferences. You can delete these backups at any time directly from your personal cloud account, or delete all local data by uninstalling the application.",
+    "bt.priv.6.t": "6. Contact Us",
+    "bt.priv.6.p": "If you have any questions about this privacy policy, please contact us at: infoceanicapp@gmail.com",
 
     // Baby Tracker Terms
     "bt.terms.title": "Terms & Conditions",
@@ -253,7 +255,7 @@ const translations = {
     // Legal common
     "legal.nav.home": "Inicio",
     "legal.label": "// Legal",
-    "legal.last_updated.bt": "<strong>Última actualización: 23 de Mayo de 2026</strong>",
+    "legal.last_updated.bt": "<strong>Última actualización: 26 de Mayo de 2026</strong>",
     "legal.last_updated.ima": "<strong>Última actualización: 16 de Mayo de 2026</strong>",
 
     // Baby Tracker Privacy
@@ -267,8 +269,10 @@ const translations = {
     "bt.priv.3.p": "Si decides habilitar las copias de seguridad en la nube (por ejemplo, a través de Android Auto Backup o exportaciones manuales), tus datos se sincronizarán con tu cuenta personal en la nube (como Google Drive). Nosotros no tenemos acceso a estas copias de seguridad.",
     "bt.priv.4.t": "4. Servicios de terceros",
     "bt.priv.4.p": "Podemos utilizar servicios de terceros para informes de errores y análisis con el fin de mejorar el rendimiento de la aplicación. Estos servicios pueden recopilar datos de uso anónimos. Nos aseguramos de que cualquier servicio de terceros utilizado cumpla con estrictos estándares de privacidad.",
-    "bt.priv.5.t": "5. Contacto",
-    "bt.priv.5.p": "Si tienes alguna pregunta sobre esta política de privacidad, por favor contáctanos en: infoceanicapp@gmail.com",
+    "bt.priv.5.t": "5. Retención y eliminación de datos",
+    "bt.priv.5.p": "Todos los datos de seguimiento del bebé se almacenan localmente en tu dispositivo. No retenemos ni almacenamos tus datos personales o relacionados con el bebé en nuestros servidores. Tus datos permanecen en tu dispositivo hasta que elimines la aplicación o borres los datos de la aplicación en los ajustes de tu dispositivo. Si decides habilitar las copias de seguridad en la nube (como Google Drive o Android Auto Backup), los archivos de copia de seguridad se almacenan en tu cuenta personal de la nube y se retienen de acuerdo con tus preferencias de almacenamiento en la nube. Puedes eliminar estas copias de seguridad en cualquier momento directamente desde tu cuenta personal de la nube, o eliminar todos los datos locales desinstalando la aplicación.",
+    "bt.priv.6.t": "6. Contacto",
+    "bt.priv.6.p": "Si tienes alguna pregunta sobre esta política de privacidad, por favor contáctanos en: infoceanicapp@gmail.com",
 
     // Baby Tracker Terms
     "bt.terms.title": "Términos y Condiciones",
@@ -284,6 +288,7 @@ const translations = {
     "bt.terms.5.t": "5. Cambios en los términos",
     "bt.terms.5.p": "Podemos actualizar nuestros Términos y Condiciones de vez en cuando. Por lo tanto, se te aconseja revisar esta página periódicamente para cualquier cambio.",
     "bt.terms.6.t": "6. Contacto",
+    "bt.terms.6.p": "Si tienes alguna pregunta o sugerencia sobre nuestros Términos y Condiciones, no dudes en contactarnos en: infoceanicapp@gmail.com",
 
     // Info Metropolitana Andalucia Privacy
     "ima.priv.title": "Política de Privacidad",
