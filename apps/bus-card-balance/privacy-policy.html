@@ -16,6 +16,9 @@
     .legal-content p { margin-bottom: 1rem; }
     .legal-content ul { padding-left: 1.5rem; margin-bottom: 1rem; }
     .legal-content li { margin-bottom: 0.5rem; }
+    .legal-highlight { border-left: 3px solid var(--text-accent); background: var(--bg-glass); padding: 1rem 1.25rem; border-radius: 8px; margin: 1.5rem 0 2rem; }
+    .legal-content .legal-highlight h3 { margin-top: 0; }
+    .legal-content a { color: var(--text-accent); }
   </style>
 </head>
 <body>
@@ -43,40 +46,42 @@
       </div>
 
       <div class="legal-content">
-        <p data-i18n="bcb.priv.updated"><strong>Última actualización: 26 de Agosto de 2026</strong></p>
+        <p data-i18n="bcb.priv.updated"><strong>Última actualización: 13 de Noviembre de 2026</strong></p>
+
+        <div class="legal-highlight">
+          <h3 data-i18n="bcb.priv.local.t">Tus datos se quedan en tu móvil</h3>
+          <p data-i18n="bcb.priv.local.p">El número de tu tarjeta, su saldo, el historial de lecturas, los nombres que pongas a tus tarjetas y tu ubicación <strong>se guardan y se procesan únicamente en tu dispositivo</strong>. <strong>Nunca se envían a nosotros ni a terceros</strong>: no tenemos servidores propios y tampoco van a los servicios de estadísticas o publicidad descritos más abajo. La única excepción es la copia de seguridad de Android: si la tienes activada, tu historial de tarjetas se incluye en la copia de tu propia cuenta de Google, como los datos del resto de tus aplicaciones.</p>
+        </div>
 
         <h3 data-i18n="bcb.priv.1.t">Introducción</h3>
-        <p data-i18n="bcb.priv.1.p">Bienvenido a la política de privacidad de Bus Card Balance. Esta política describe cómo recopilamos, utilizamos y compartimos la información cuando utilizas nuestra aplicación móvil.</p>
+        <p data-i18n="bcb.priv.1.p">Bienvenido a la política de privacidad de Bus Card Balance (Saldo Tarjeta Andalucía). La aplicación lee por NFC el saldo de tu tarjeta del Consorcio de Transportes de Andalucía. Esta política describe qué información utiliza, dónde se guarda y qué se envía fuera de tu dispositivo.</p>
 
-        <h3 data-i18n="bcb.priv.2.t">Información que recopilamos</h3>
-        <h4 data-i18n="bcb.priv.2.sub1">Datos de uso</h4>
+        <h3 data-i18n="bcb.priv.2.t">Datos que se quedan en tu dispositivo</h3>
         <ul>
-          <li data-i18n="bcb.priv.2.sub1.l1"><strong>Información de uso anónima</strong>: Podemos recopilar datos anónimos sobre cómo interactúas con la aplicación para mejorar la experiencia del usuario.</li>
-          <li data-i18n="bcb.priv.2.sub1.l2">Esta información incluye estadísticas generales que no permiten identificarte personalmente.</li>
+          <li data-i18n="bcb.priv.2.l1"><strong>Tarjeta (NFC)</strong>: la aplicación lee el número y el saldo de tu tarjeta cuando la acercas al móvil. Solo lee la tarjeta: nunca escribe en ella ni la modifica, y no puede recargarla.</li>
+          <li data-i18n="bcb.priv.2.l2"><strong>Historial de tarjetas</strong>: las tarjetas leídas, los nombres que les pongas y sus saldos y fechas de lectura se guardan solo en tu móvil para mostrarte el último saldo y su evolución. Se borran al eliminar la tarjeta en la aplicación o al desinstalarla. Si tienes activada la copia de seguridad de Android, se incluyen en la copia de tu cuenta de Google y se recuperan al cambiar de móvil.</li>
+          <li data-i18n="bcb.priv.2.l3"><strong>Ubicación</strong>: es opcional y solo se usa, con tu permiso, para ordenar los puntos de venta por cercanía. La distancia se calcula en tu móvil y tu ubicación no se envía a ningún sitio. Puedes retirar el permiso en cualquier momento desde los ajustes del dispositivo.</li>
         </ul>
 
-        <h4 data-i18n="bcb.priv.2.sub2">Datos de la tarjeta de transporte</h4>
+        <h3 data-i18n="bcb.priv.3.t">Datos que se envían fuera de tu dispositivo</h3>
+        <p data-i18n="bcb.priv.3.p">Para que la aplicación funcione y podamos mejorarla, se envía la siguiente información. Ninguna de ella incluye los datos de tu tarjeta ni tu ubicación:</p>
         <ul>
-          <li data-i18n="bcb.priv.2.sub2.l1"><strong>Número de tarjeta</strong>: La aplicación utiliza el número de tu tarjeta de transporte para consultar su saldo. Este número se procesa únicamente en tu dispositivo y no se almacena en nuestros servidores.</li>
-          <li data-i18n="bcb.priv.2.sub2.l2">No realizamos un seguimiento ni almacenamos historial de consultas de saldo.</li>
+          <li data-i18n="bcb.priv.3.l1"><strong>Puntos de venta</strong>: la aplicación descarga la lista de puntos de venta de los datos abiertos del Consorcio de Transportes de Andalucía. La petición no incluye ningún dato tuyo.</li>
+          <li data-i18n="bcb.priv.3.l2"><strong>Informes de fallos (Firebase Crashlytics, de Google)</strong>: si la aplicación falla, se envía un informe técnico con el modelo del dispositivo, la versión de Android y de la aplicación y el estado de la lectura NFC en ese momento. Base legal: nuestro interés legítimo en corregir errores.</li>
+          <li data-i18n="bcb.priv.3.l3"><strong>Estadísticas de uso (Google Analytics para Firebase)</strong>: datos agregados como si una lectura ha funcionado o qué tipo de error ha dado, qué pantallas se visitan o cuántas tarjetas hay guardadas (0, 1, 2 o 3 o más), junto a un identificador aleatorio de la instalación. En el Espacio Económico Europeo, Reino Unido y Suiza solo se recogen si lo aceptas en el aviso de consentimiento. Se conservan 14 meses.</li>
+          <li data-i18n="bcb.priv.3.l4"><strong>Nunca se envían</strong> el número o identificador de tu tarjeta, su saldo, tu historial de lecturas, los nombres de tus tarjetas ni tu ubicación.</li>
         </ul>
-
-        <h3 data-i18n="bcb.priv.3.t">Cómo utilizamos la información</h3>
-        <ul>
-          <li data-i18n="bcb.priv.3.l1">El número de tarjeta se utiliza exclusivamente para consultar el saldo disponible en tu tarjeta de transporte público.</li>
-          <li data-i18n="bcb.priv.3.l2">Los datos anónimos de uso nos ayudan a mejorar el funcionamiento y diseño de la aplicación.</li>
-          <li data-i18n="bcb.priv.3.l3">No vendemos ni compartimos tu información personal con terceros con fines comerciales.</li>
-        </ul>
+        <p data-i18n="bcb.priv.3.l5">No vendemos ni compartimos tu información con terceros con fines comerciales. Más información sobre cómo trata Google estos datos: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacidad en Firebase</a>.</p>
 
         <h3 data-i18n="bcb.priv.4.t">Publicidad</h3>
         <ul>
-          <li data-i18n="bcb.priv.4.l1">La aplicación muestra anuncios proporcionados por redes publicitarias de terceros.</li>
-          <li data-i18n="bcb.priv.4.l2">Estas redes pueden utilizar identificadores de dispositivo e información no personal para mostrar anuncios relevantes.</li>
-          <li data-i18n="bcb.priv.4.l3">No compartimos información personal con estas redes publicitarias.</li>
+          <li data-i18n="bcb.priv.4.l1">La aplicación muestra anuncios de Google AdMob.</li>
+          <li data-i18n="bcb.priv.4.l2">En el Espacio Económico Europeo, Reino Unido y Suiza te pedimos tu consentimiento con el aviso de Google antes de mostrar anuncios. Puedes cambiar tu elección en cualquier momento desde el enlace <strong>"Privacidad"</strong> que aparece junto a los anuncios.</li>
+          <li data-i18n="bcb.priv.4.l3">Google puede usar identificadores de publicidad del dispositivo para mostrar anuncios, según tu elección. No damos a las redes publicitarias los datos de tu tarjeta, tu historial ni tu ubicación. Más información: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">cómo usa Google la información de las apps que usan sus servicios</a>.</li>
         </ul>
 
         <h3 data-i18n="bcb.priv.5.t">Seguridad de los datos</h3>
-        <p data-i18n="bcb.priv.5.p">Nos comprometemos a proteger tu información mediante medidas de seguridad técnicas y organizativas adecuadas para prevenir el acceso no autorizado, modificación o divulgación de datos.</p>
+        <p data-i18n="bcb.priv.5.p">Los datos que se envían a Google (informes de fallos, estadísticas y anuncios) viajan cifrados. Los datos de tus tarjetas se quedan en el almacenamiento privado de la aplicación en tu dispositivo.</p>
 
         <h3 data-i18n="bcb.priv.6.t">Cambios en esta política de privacidad</h3>
         <p data-i18n="bcb.priv.6.p">Podemos actualizar nuestra política de privacidad de vez en cuando. Te recomendamos revisar esta página periódicamente para estar informado sobre cualquier cambio.</p>
@@ -91,9 +96,13 @@
           <li data-i18n="bcb.priv.7.l5">Solicitar la restricción del procesamiento de tus datos personales</li>
           <li data-i18n="bcb.priv.7.l6">Solicitar la portabilidad de tus datos</li>
         </ul>
+        <p data-i18n="bcb.priv.7.p2">Los datos de tus tarjetas están solo en tu móvil: puedes borrarlos tú mismo eliminando las tarjetas en la aplicación o desinstalándola, y también su copia de seguridad desde los ajustes de copia de seguridad de tu cuenta de Google. Para los datos tratados por Google para estadísticas y anuncios, escríbenos a la dirección de contacto.</p>
 
         <h3 data-i18n="bcb.priv.8.t">Consentimiento</h3>
         <p data-i18n="bcb.priv.8.p">Al utilizar nuestra aplicación, aceptas los términos de esta política de privacidad. Si no estás de acuerdo con esta política, por favor, no utilices nuestra aplicación.</p>
+
+        <h3 data-i18n="bcb.priv.9.t">Contacto</h3>
+        <p data-i18n="bcb.priv.9.p">Si tienes cualquier pregunta sobre esta política de privacidad, escríbenos a: infoceanicapp@gmail.com</p>
       </div>
     </div>
   </section>
